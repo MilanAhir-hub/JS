@@ -17,6 +17,7 @@
 
 function mergeMultiple(...arrays) {
   // Write your solution here
+  return [].concat(...arrays);
 }
 
 // Test Cases

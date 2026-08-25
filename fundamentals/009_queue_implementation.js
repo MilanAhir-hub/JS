@@ -17,23 +17,39 @@
 
 class Queue {
   constructor() {
-    // Write your solution here
+    this.items = [];
   }
 
   enqueue(val) {
-    // Write your solution here
+    if(this.items.length === 5){
+      return "Overflow"
+    }
+
+    this.items.push(val);
   }
 
   dequeue() {
-    // Write your solution here
+    if(this.items.length === 0){
+      return "Underflow"
+    }
+
+    return this.items.shift();
   }
 
   front() {
-    // Write your solution here
+    if(this.items.length === 0){
+      return -1;
+    }
+
+    return items[0];
   }
 
   isEmpty() {
-    // Write your solution here
+    if(this.items.length === 0){
+      return true;
+    }
+
+    return false;
   }
 }
 

@@ -14,8 +14,21 @@
  * - Must check `indexOf() === -1`
  */
 
-function isMissing(arr, target) {
-  // Write your solution here
+// function isMissing(arr, target) {
+//   return arr.indexOf(target) === -1;
+// }
+
+function isMissing(arr, target){
+  let result = true;
+
+  for(let i = 0; i<arr.length; i++){
+    if(arr[i] == target){
+      result = false;
+      break;
+    }
+  }
+
+  return result;
 }
 
 // Test Cases

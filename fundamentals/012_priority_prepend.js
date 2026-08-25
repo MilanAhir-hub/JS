@@ -16,7 +16,16 @@
  */
 
 function addUrgentTask(tasks, task, maxCapacity) {
-  // Write your solution here
+  
+  while(tasks.length >=maxCapacity){
+      tasks.pop();
+  }
+
+  tasks.unshift(task);
+
+  
+
+  return tasks;
 }
 
 // Test Cases

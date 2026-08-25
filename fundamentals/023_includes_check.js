@@ -17,6 +17,8 @@
 
 function hasItem(arr, target) {
   // Write your solution here
+
+  return arr.includes(target);
 }
 
 // Test Cases

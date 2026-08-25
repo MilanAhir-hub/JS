@@ -16,7 +16,10 @@
  */
 
 function moveElement(arr, fromIndex, toIndex) {
-  // Write your solution here
+  let item = arr.splice(fromIndex, 1)[0];
+  arr.splice(toIndex, 0, item);
+
+  return arr;
 }
 
 // Test Cases

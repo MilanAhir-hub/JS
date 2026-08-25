@@ -16,10 +16,10 @@
  */
 
 function findNextIndex(arr, target, startFrom) {
-  // Write your solution here
+  return arr.indexOf(target, startFrom);
 }
 
 // Test Cases
-console.log(findNextIndex(["a", "b", "c", "b"], "b", 2)); // Expected output: 3
+console.log(findNextIndex(["a", "b", "c", "b", "a", "b"], "b", 4)); // Expected output: 3
 
 module.exports = { findNextIndex };

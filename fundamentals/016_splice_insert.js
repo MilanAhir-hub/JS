@@ -16,7 +16,9 @@
  */
 
 function insertAtIndex(arr, index, ...items) {
-  // Write your solution here
+  arr.splice(index, 0, ...items);
+  
+  return arr;
 }
 
 // Test Cases

@@ -16,7 +16,16 @@
  */
 
 function rotateRight(arr, k) {
-  // Write your solution here
+  k = k%arr.length;
+
+  while(k > 0){
+    let element = arr.pop();
+    arr.unshift(element);
+
+    k--;
+  }
+
+  return arr;
 }
 
 // Test Cases

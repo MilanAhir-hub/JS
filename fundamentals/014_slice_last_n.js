@@ -16,7 +16,11 @@
  */
 
 function getLastN(arr, n) {
-  // Write your solution here
+  if(arr.length < n){
+    return arr;
+  }
+
+  return arr.slice(-n);
 }
 
 // Test Cases

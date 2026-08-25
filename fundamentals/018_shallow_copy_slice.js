@@ -16,7 +16,9 @@
  */
 
 function cloneArray(arr) {
-  // Write your solution here
+  let copyArr = arr.slice();
+
+  return copyArr;
 }
 
 // Test Cases

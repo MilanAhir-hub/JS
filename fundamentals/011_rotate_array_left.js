@@ -16,8 +16,17 @@
  */
 
 function rotateLeft(arr, k) {
-  // Write your solution here
+  k = k%arr.length;
+
+  while(k>0){
+    let element = arr.shift();
+    arr.push(element);
+    k--;
+  }
+
+  return arr;
 }
+
 
 // Test Cases
 console.log(rotateLeft([1, 2, 3, 4, 5], 2)); // Expected output: [3, 4, 5, 1, 2]

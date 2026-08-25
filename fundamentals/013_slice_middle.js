@@ -16,7 +16,7 @@
  */
 
 function getSubarray(arr, start, end) {
-  // Write your solution here
+  return arr.slice(start, end);
 }
 
 // Test Cases

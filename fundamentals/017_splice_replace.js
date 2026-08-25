@@ -16,7 +16,9 @@
  */
 
 function replaceAtIndex(arr, index, newItem) {
-  // Write your solution here
+  arr.splice(index, 1, newItem);
+
+  return arr;
 }
 
 // Test Cases

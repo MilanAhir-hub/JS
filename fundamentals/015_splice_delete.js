@@ -16,7 +16,11 @@
  */
 
 function removeAtIndex(arr, index) {
-  // Write your solution here
+  if(index < 0 || arr.length < index){
+    return -1;
+  }
+
+  return arr.splice(index, 1);
 }
 
 // Test Cases

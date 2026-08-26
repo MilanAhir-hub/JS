@@ -16,7 +16,9 @@
  */
 
 function validateScores(scores) {
-  // Write your solution here
+  let result = scores.every(score => score>=50) && scores.some(score => score>=50);
+
+  return result;
 }
 
 // Test Cases

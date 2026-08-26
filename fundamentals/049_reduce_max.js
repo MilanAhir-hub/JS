@@ -15,7 +15,15 @@
  */
 
 function findMax(numbers) {
-  // Write your solution here
+  let result = numbers.reduce((acc, current) =>{
+    if(current > acc){
+      return current;
+    }else{
+      return acc;
+    }
+  }, -Infinity);
+
+  return result;
 }
 
 // Test Cases

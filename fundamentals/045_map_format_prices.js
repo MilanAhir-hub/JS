@@ -15,7 +15,9 @@
  */
 
 function formatPrices(amounts, currencySymbol = "$") {
-  // Write your solution here
+  let result = amounts.map(amount => `${currencySymbol}${amount.toFixed(2)}`);
+
+  return result;
 }
 
 // Test Cases

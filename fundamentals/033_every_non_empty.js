@@ -16,7 +16,9 @@
  */
 
 function allNonEmpty(strings) {
-  // Write your solution here
+  let result = strings.every(str=> str.trim().length>0);
+
+  return result;
 }
 
 // Test Cases

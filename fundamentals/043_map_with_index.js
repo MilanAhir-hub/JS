@@ -15,7 +15,9 @@
  */
 
 function formatNumberedList(items) {
-  // Write your solution here
+  let result = items.map((item, index) => `${index+1}. ${item}`);
+
+  return result;
 }
 
 // Test Cases

@@ -15,7 +15,17 @@
  */
 
 function countFrequencies(items) {
-  // Write your solution here
+  let result = items.reduce((acc, current) =>{
+    if(acc[current]){
+      acc[current] = acc[current] + 1;
+    }else{
+      acc[current] = 1;
+    }
+
+    return acc;
+  }, {})
+
+  return result;
 }
 
 // Test Cases

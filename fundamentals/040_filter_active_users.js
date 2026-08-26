@@ -15,7 +15,9 @@
  */
 
 function getActiveUsers(users) {
-  // Write your solution here
+  let result = users.filter(user => user['active'] === true);
+
+  return result;
 }
 
 // Test Cases

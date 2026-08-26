@@ -16,7 +16,8 @@
  */
 
 function hasAdminUser(users) {
-  // Write your solution here
+  let result = users.some(user => user.role == "admin");
+  return result;
 }
 
 // Test Cases

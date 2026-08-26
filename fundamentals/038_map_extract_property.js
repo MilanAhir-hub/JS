@@ -15,7 +15,9 @@
  */
 
 function pluck(items, key) {
-  // Write your solution here
+  let result = items.map(item => item[key]);
+
+  return result;
 }
 
 // Test Cases

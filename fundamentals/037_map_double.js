@@ -16,7 +16,9 @@
  */
 
 function doubleNumbers(numbers) {
-  // Write your solution here
+  let result = numbers.map(number => number*2);
+
+  return result;
 }
 
 // Test Cases

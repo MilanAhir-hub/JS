@@ -14,8 +14,11 @@
  * - Must use `filter()`
  */
 
+// filter always returns a new array
 function filterEvens(numbers) {
-  // Write your solution here
+  let result = numbers.filter(number=> number%2 == 0);
+
+  return result;
 }
 
 // Test Cases

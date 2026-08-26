@@ -15,7 +15,11 @@
  */
 
 function sumNumbers(numbers) {
-  // Write your solution here
+  let result = numbers.reduce((acc, current) => {
+    return acc+current;
+  }, 0)
+
+  return result;
 }
 
 // Test Cases

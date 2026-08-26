@@ -16,7 +16,13 @@
  */
 
 function findFirstEven(numbers) {
-  // Write your solution here
+  let x = numbers.find(x => x%2 == 0);
+
+  if(x){
+    return x;
+  }
+
+  return undefined;
 }
 
 // Test Cases

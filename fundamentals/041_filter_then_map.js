@@ -15,7 +15,9 @@
  */
 
 function squarePositives(numbers) {
-  // Write your solution here
+  let result = numbers.filter(num => num > 0).map(number => number*number);
+
+  return result;
 }
 
 // Test Cases

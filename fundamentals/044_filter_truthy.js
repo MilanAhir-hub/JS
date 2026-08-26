@@ -15,7 +15,9 @@
  */
 
 function compact(arr) {
-  // Write your solution here
+  let result = arr.filter(Boolean);
+
+  return result;
 }
 
 // Test Cases

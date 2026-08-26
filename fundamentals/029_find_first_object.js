@@ -16,10 +16,17 @@
  */
 
 function findUserById(users, id) {
-  // Write your solution here
+  
+  for(let user of users){
+    if(user.id === id){
+      return user;
+    }
+  }
+
+  return undefined;
 }
 
 // Test Cases
-console.log(findUserById([{id: 1, name: "Alice"}, {id: 2, name: "Bob"}], 2)); // Expected output: {id: 2, name: "Bob"}
+console.log(findUserById([{id: 1, name: "Alice"}, {id: 2, name: "Bob"}], 5)); // Expected output: undefined
 
 module.exports = { findUserById };

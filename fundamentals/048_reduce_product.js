@@ -15,7 +15,11 @@
  */
 
 function productNumbers(numbers) {
-  // Write your solution here
+  let result = numbers.reduce((acc, current) =>{
+    return acc*current;
+  }, 1);
+
+  return result;
 }
 
 // Test Cases

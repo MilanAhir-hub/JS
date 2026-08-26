@@ -15,7 +15,9 @@
  */
 
 function filterRange(numbers, min, max) {
-  // Write your solution here
+  let result = numbers.filter(number=> number >=min && number <=max);
+
+  return result;
 }
 
 // Test Cases

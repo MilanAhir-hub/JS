@@ -16,10 +16,12 @@
  */
 
 function mergeAndCheck(arr1, arr2, target) {
-  // Write your solution here
+  let result = arr1.concat(arr2).includes(target);
+
+  return result;
 }
 
 // Test Cases
-console.log(mergeAndCheck([1, 2], [3, 4], 3)); // Expected output: true
+console.log(mergeAndCheck([1, 2], [3, 4], 5)); // Expected output: false
 
 module.exports = { mergeAndCheck };

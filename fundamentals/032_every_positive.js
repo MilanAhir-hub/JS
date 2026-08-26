@@ -16,7 +16,11 @@
  */
 
 function allPositive(numbers) {
-  // Write your solution here
+  if(numbers.every(x => x >= 0)){
+    return true;
+  }
+
+  return false;
 }
 
 // Test Cases

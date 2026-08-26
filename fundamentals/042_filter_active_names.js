@@ -15,7 +15,9 @@
  */
 
 function getActiveNames(users) {
-  // Write your solution here
+  let result = users.filter(user => user['active'] === true).map(user => user['name']);
+
+  return result;
 }
 
 // Test Cases

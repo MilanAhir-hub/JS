@@ -16,7 +16,11 @@
  */
 
 function hasPositive(numbers) {
-  // Write your solution here
+  if(numbers.some(x=>x>=0)){
+    return true;
+  }
+
+  return false;
 }
 
 // Test Cases

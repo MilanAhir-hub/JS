@@ -15,7 +15,7 @@
  */
 
 function sortStrings(words) {
-  // Write your solution here
+  return words.sort((a, b) => a.localeCompare(b));
 }
 
 // Test Cases

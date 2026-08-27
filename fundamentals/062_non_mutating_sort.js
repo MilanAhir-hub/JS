@@ -15,7 +15,9 @@
  */
 
 function safeSort(numbers) {
-  // Write your solution here
+  let copy = numbers.slice(0, numbers.length);
+
+  return copy.sort();
 }
 
 // Test Cases

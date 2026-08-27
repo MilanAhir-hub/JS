@@ -15,7 +15,7 @@
  */
 
 function sortDescending(numbers) {
-  // Write your solution here
+  return numbers.sort((a, b) => b-a)
 }
 
 // Test Cases

@@ -15,7 +15,7 @@
  */
 
 function reverseInPlace(arr) {
-  // Write your solution here
+  return arr.reverse();
 }
 
 // Test Cases

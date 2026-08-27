@@ -15,7 +15,7 @@
  */
 
 function sortByAge(users) {
-  // Write your solution here
+  return users.sort((a, b) => a.age - b.age);
 }
 
 // Test Cases

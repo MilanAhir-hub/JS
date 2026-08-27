@@ -15,7 +15,13 @@
  */
 
 function pipe(fns, initialValue) {
-  // Write your solution here
+  let result = fns.reduce((acc, current) =>{
+    acc = current(acc);
+    return acc;
+
+  }, initialValue)
+
+  return result;
 }
 
 // Test Cases

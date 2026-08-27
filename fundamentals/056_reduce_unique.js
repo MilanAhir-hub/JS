@@ -15,7 +15,14 @@
  */
 
 function removeDuplicates(items) {
-  // Write your solution here
+  let result = items.reduce((acc, current) =>{
+    if(!acc.includes(current)){
+      acc.push(current);
+    }
+    return acc;
+  }, []);
+
+  return result;
 }
 
 // Test Cases

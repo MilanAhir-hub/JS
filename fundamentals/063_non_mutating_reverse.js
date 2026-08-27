@@ -15,7 +15,9 @@
  */
 
 function safeReverse(arr) {
-  // Write your solution here
+  let copy = arr.slice(0, arr.length);
+
+  return copy.reverse();
 }
 
 // Test Cases

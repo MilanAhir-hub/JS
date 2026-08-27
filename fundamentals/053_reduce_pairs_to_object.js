@@ -15,7 +15,13 @@
  */
 
 function pairsToObject(pairs) {
-  // Write your solution here
+  let result = pairs.reduce((acc, current) =>{
+    acc[current[0]] = current[1];
+
+    return acc;
+  }, {});
+
+  return result;
 }
 
 // Test Cases

@@ -15,7 +15,17 @@
  */
 
 function groupBy(items, key) {
-  // Write your solution here
+  let result = items.reduce((acc, current) =>{
+    if(!acc[current[key]]){
+      acc[current[key]] = [];
+
+    }
+    acc[current[key]].push(current);
+
+    return acc;
+  }, {})
+
+  return result;
 }
 
 // Test Cases

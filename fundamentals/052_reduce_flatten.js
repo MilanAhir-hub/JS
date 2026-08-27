@@ -15,7 +15,13 @@
  */
 
 function flatten2D(arrays) {
-  // Write your solution here
+  let result = arrays.reduce((acc, current) =>{
+    acc = acc.concat(current);
+
+    return acc;
+  }, [])
+
+  return result;
 }
 
 // Test Cases

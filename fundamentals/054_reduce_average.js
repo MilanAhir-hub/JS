@@ -15,7 +15,19 @@
  */
 
 function calculateAverage(numbers) {
-  // Write your solution here
+
+  if(numbers.length === 0){
+    return 0;
+  }
+
+  let sum = 0;
+  let result = numbers.reduce((acc, current) =>{
+    sum = acc+current;
+
+    return sum;
+  }, 0);
+
+  return result/numbers.length;
 }
 
 // Test Cases

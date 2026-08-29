@@ -15,7 +15,15 @@
  */
 
 function intersection(arr1, arr2) {
-  // Write your solution here
+  let result = [];
+
+  for(let dig of arr1){
+    if(arr2.includes(dig)){
+      result.push(dig);
+    }
+  }
+
+  return result;
 }
 
 // Test Cases

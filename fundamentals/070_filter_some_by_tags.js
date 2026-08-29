@@ -16,7 +16,9 @@
  */
 
 function filterByTags(items, targetTags) {
-  // Write your solution here
+  let result = items.filter(item => item.tags.some(tag => targetTags.includes(tag)));
+
+  return result;
 }
 
 // Test Cases

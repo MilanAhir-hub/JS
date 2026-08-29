@@ -16,7 +16,7 @@
  */
 
 function formatAndSortNames(names) {
-  // Write your solution here
+  return names.sort((a, b) => a.localeCompare(b)).map((name) => name.toUpperCase());
 }
 
 // Test Cases

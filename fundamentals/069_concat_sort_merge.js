@@ -15,7 +15,7 @@
  */
 
 function mergeAndSort(arr1, arr2) {
-  // Write your solution here
+  return arr1.concat(arr2).sort((a, b) => a - b);
 }
 
 // Test Cases

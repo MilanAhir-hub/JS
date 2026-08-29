@@ -15,7 +15,7 @@
  */
 
 function reverseLastN(arr, n) {
-  // Write your solution here
+  return arr.slice(-n).reverse();
 }
 
 // Test Cases

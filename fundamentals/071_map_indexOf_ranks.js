@@ -15,7 +15,9 @@
  */
 
 function getPriorityRanks(items, priorityOrder) {
-  // Write your solution here
+  let result = items.map(item => priorityOrder.indexOf(item));
+
+  return result;
 }
 
 // Test Cases

@@ -15,7 +15,12 @@
  */
 
 function sumPositives(numbers) {
-  // Write your solution here
+  let filteredArr = numbers.filter((number) => number > 0);
+
+  return filteredArr.reduce((acc, current) =>{
+    acc = acc+current;
+    return acc;
+  }, 0)
 }
 
 // Test Cases
